@@ -7,8 +7,8 @@ int main()
    int i;
    int j;
     printf("Enter your height :");
-    scanf( "%i",&height);
-        if(height<=0)
+    scanf( "%i", &height);
+        if(height <= 0)
         printf("You entered a value less than or equal to 0! try again\n");
     else{
 
@@ -16,9 +16,9 @@ int main()
 //maximum width of x, where each new line is
 //longer by one character
 
-       for ( i = 1;i<= height; i++){
+       for ( i = 1; i<= height; i++){
 
-            for ( j = 1;j<= i; j++)
+            for ( j = 1; j <= i; j++)
             printf("%c",'*');
             printf("\n");
         }
@@ -39,9 +39,9 @@ int main()
 //Draws a Christmas tree inverted  of height x and a
 //maximum width of x
 
-        for ( i = 1;i<= height; i++){
+        for ( i = 1; i <= height; i++){
 
-            for ( j = 1;j<=(height+i); j++){
+            for ( j = 1; j <= (height+i); j++){
 
                 if( j<=(height-i+1)){
                     printf("%c",' ');
@@ -54,11 +54,12 @@ int main()
 
 //Draws a "*" stump, depending on the entered height
 
-         for ( i = 0;i<= height; i++){
-                if( i==height)
+         for ( i = 0; i<= height; i++){
+                if( i == height){
                     printf("%c",'*');
-               else
+                }else{
                     printf("%c",' ');
+                }
         }
          printf("\n");
     }
