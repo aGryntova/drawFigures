@@ -18,10 +18,9 @@ int main()
 
        for ( i = 1;i<= height; i++){
 
-            for ( j = 1;j<= i; j++){
+            for ( j = 1;j<= i; j++)
             printf("%c",'*');
             printf("\n");
-            }
         }
         printf("\n");
 
@@ -31,10 +30,9 @@ int main()
 
         for ( i=1;i<=height;i++){
 
-            for( j=0;j<=(height-i);j++){
+            for( j=0;j<=(height-i);j++)
             printf("%c",'*');
             printf("\n");
-            }
         }
         printf("\n");
 
@@ -50,16 +48,19 @@ int main()
                 }else{
                     printf("%c",'*');
                 }
+            }
             printf("\n");
             }
+
 //Draws a "*" stump, depending on the entered height
 
          for ( i = 0;i<= height; i++){
-                if( i==height){
+                if( i==height)
                     printf("%c",'*');
-               }else{
+               else
                     printf("%c",' ');
-            }
         }
+         printf("\n");
+    }
     return 0;
 }
